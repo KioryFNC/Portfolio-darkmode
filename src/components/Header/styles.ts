@@ -8,6 +8,9 @@ export const Root = styled.div`
   justify-content: space-between;
   nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
     gap: 2rem;
     a {
       border: 1px solid ${(props) => props.theme['gray-300']};
