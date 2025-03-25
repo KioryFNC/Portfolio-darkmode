@@ -6,11 +6,11 @@ export const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   nav {
     display: flex;
     gap: 2rem;
     a {
+      border: 1px solid ${(props) => props.theme['gray-300']};
       padding: 1rem;
       border-radius: 99px;
     }

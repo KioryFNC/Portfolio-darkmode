@@ -60,6 +60,7 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
   }
   
   a:hover {
@@ -71,6 +72,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    transform: scale(1.1);
   }
 
   @media (width >= 80em){
