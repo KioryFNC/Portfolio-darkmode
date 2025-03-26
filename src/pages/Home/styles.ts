@@ -111,36 +111,37 @@ export const MyProjects = styled.section`
   text-align: center;
   padding: 4rem 0;
 
-  h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff;
+  div {
+    h3 span{
+      font-size: 2rem;
+    }
     
-    span {
-      color: #E96379; /* Vermelho suave */
+    h4 {
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: ${(props) => props.theme['gray-100']};
     }
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #fff;
-  }
-
-  .Projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-
-    @media (width <= 64em) {
-      grid-template-columns: repeat(2, 1fr); 
+    
+    @media (width >= 48em) {
+      h3 span {
+        font-size: 3.6rem;
+      }
     }
-
-    @media (width <= 48em) {
-      grid-template-columns: 1fr; 
-    }
-  }
+  } 
 `;
+
+export const Project = styled.div.attrs({ id: 'project'})`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  
+  @media (width <= 64em) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  
+  @media (width <= 48em) {
+    grid-template-columns: 1fr; 
+  }
+`

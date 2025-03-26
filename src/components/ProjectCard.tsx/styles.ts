@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  background:${(props) => props.theme['gray-400']}; 
+  background:${(props) => props.theme['gray-500']}; 
   padding: 1.5rem;
   border-radius: 8px;
   border: 2px solid transparent;
@@ -10,10 +10,10 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
 
   &:hover {
-    border-color: #E96379; /* Destaque ao passar o mouse */
+    border-color: ${(props) => props.theme['green-100']};
     transform: scale(1.05);
   }
 
@@ -24,7 +24,7 @@ export const Card = styled.div`
 
   h4 {
     margin: 1rem 0;
-    color: #FFF;
+    color: ${(props) => props.theme['gray-100']};
   }
 
   p {
@@ -49,7 +49,8 @@ export const Card = styled.div`
       border: 1px solid transparent;
 
       &:hover {
-        background: #E96379;
+        background: ${(props) => props.theme['green-100']};
+        color: #292929;
         border-color: #fff;
       }
     }

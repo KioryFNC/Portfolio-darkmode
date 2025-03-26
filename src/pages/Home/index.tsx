@@ -51,31 +51,55 @@ export function Home() {
       </Element.About>
 
       <Element.MyProjects>
-        <h2>Meu <span>trabalho</span></h2>
-        <h3>Veja os projetos em destaque</h3>
-        <div className="Projects">
-          <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
-          />
-          <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
-          />
-          <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
-          />
+        <div>
+          <h3>Meu <span>trabalho</span></h3>
+          <h4>Veja os projetos em destaque</h4>
         </div>
+        <Element.Project>
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+          <ProjectCard 
+            image={CoffeeDelivery}
+            title='CoffeeDelivery'
+            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
+            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
+            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+          />
+        </Element.Project>
+
       </Element.MyProjects>
 
     </Element.Root>
