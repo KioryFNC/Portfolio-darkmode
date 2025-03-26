@@ -64,12 +64,6 @@ export const About = styled.div.attrs({ id: 'about'})`
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  @media (width >= 80em) {
-    p {
-      text-align: center;
-    }
-}
 `
 
 export const Skills = styled.div`
@@ -78,7 +72,7 @@ export const Skills = styled.div`
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 4rem;
   gap: 1rem;
 
   span {
@@ -111,5 +105,42 @@ export const Skills = styled.div`
       max-width: 120px;
     }
   }
-  
 `
+
+export const MyProjects = styled.section`
+  text-align: center;
+  padding: 4rem 0;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    
+    span {
+      color: #E96379; /* Vermelho suave */
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .Projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @media (width <= 64em) {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+
+    @media (width <= 48em) {
+      grid-template-columns: 1fr; 
+    }
+  }
+`;

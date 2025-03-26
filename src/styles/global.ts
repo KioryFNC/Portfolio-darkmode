@@ -72,6 +72,10 @@ export const GlobalStyle = createGlobalStyle`
     color: transparent;
   }
 
+  h4 {
+    font-size: var(--fs-base)
+  }
+
   a {
     text-decoration: none;
     color: inherit;
