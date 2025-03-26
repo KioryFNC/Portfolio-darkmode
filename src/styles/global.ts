@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import background from '../assets/Background.png'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -31,8 +32,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme['gray-400']};
-    overflow-x: hidden;
+    background: url(${background}) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
   }
 
   h1, h2, h3 {
@@ -42,19 +46,30 @@ export const GlobalStyle = createGlobalStyle`
   span, strong, p, a {
     font-family: 'Inconsolata', sans-serif;
     line-height: 1.2;
-    font-size: 1.6rem;
+    font-size: var(--fs-base);
   }
 
   h1 {
     font-size: var(--fs-2xl);
+    text-align: center;
   }
 
   h2 {
     font-size: var(--fs-xl);
+    text-align: center;
   }
 
   h3 {
     font-size: var(--fs-lg);
+    text-align: center;
+    background: linear-gradient(
+      95deg,
+#80E961 35%,
+#00B3FF 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   a {
@@ -66,8 +81,8 @@ export const GlobalStyle = createGlobalStyle`
   a:hover {
     background: linear-gradient(
       95deg,
-      #9C83FF 57.09%,
-      #FF9051 87.74%
+      #80E961 35%,
+      #00B3FF 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -77,6 +92,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (width >= 80em){
     :root {
+      --fs-base: 2rem;
       --fs-lg: 3.6rem;
       --fs-xl: 4.8rem;
       --fs-2xl: 6.4rem;
