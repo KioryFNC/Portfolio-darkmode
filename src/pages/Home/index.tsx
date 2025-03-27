@@ -11,9 +11,13 @@ import javaScript from '../../assets/javaScript.svg'
 import Github from '../../assets/Github.svg'
 import HTML from '../../assets/HTML.svg'
 import CSS from '../../assets/CSS.svg'
+
 import CoffeeDelivery from '../../assets/Projects/CoffeeDelivery.png'
-
-
+import GTA from '../../assets/Projects/GTA.png'
+import FoodExplorer from '../../assets/Projects/FoodExplorer.png'
+import Zingen from '../../assets/Projects/zingen.png'
+import Timer from '../../assets/Projects/Timer.png'
+import ToDo from '../../assets/Projects/ToDo.png'
 
 
 export function Home() {
@@ -64,39 +68,39 @@ export function Home() {
             codeLink='https://github.com/KioryFNC/coffeeDelivery'
           />
           <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+            image={ToDo}
+            title='ToDo-List'
+            description='Página web para criação e controle de tarefas.'
+            siteLink='https://todo-list-lilac-phi.vercel.app/'
+            codeLink='https://github.com/KioryFNC/todoList'
           />
           <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+            image={Zingen}
+            title='Zingen'
+            description='Landing Page de marketing completa e responsiva de um aplicativo de Karaokê chamado Zingen.'
+            siteLink='https://zingen-responsive.vercel.app/'
+            codeLink='https://github.com/KioryFNC/zingenResponsive'
           />
           <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+            image={Timer}
+            title='Timer'
+            description='Projeto onde coloca um Timer que pode ser interrompido durante o processo, acabar com o tempo ou em processo. e uma pagina de historico com os detalhes.'
+            siteLink='https://timer-ig-three.vercel.app/'
+            codeLink='https://github.com/KioryFNC/IgniteTimer'
           />
           <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+            image={GTA}
+            title='GTA FiveM'
+            description='Aplicação onde tem lista de players e pode adicionar um novo play, procurar, excluir ou mudar sua hirarquina de cargo (nao fiz responsividade pois era uma aplicação para um jogo somente de computador)'
+            siteLink='https://five-m-six.vercel.app/'
+            codeLink='https://github.com/KioryFNC/stydyingFiveM'
           />
-          <ProjectCard 
-            image={CoffeeDelivery}
-            title='CoffeeDelivery'
-            description='Coffee Delivery é uma página web de catálogo e compra de cafés.'
-            siteLink='https://coffee-delivery-nu-liard.vercel.app/'
-            codeLink='https://github.com/KioryFNC/coffeeDelivery'
+           <ProjectCard 
+            image={FoodExplorer}
+            title='FoodExplorer'
+            description='Projeto que fiz na metade de 2024, mas não completei o projeto porque foquei em outros, mas deixei responsivel.'
+            siteLink='https://food-explorer-front-refactored.vercel.app/'
+            codeLink='https://github.com/KioryFNC/foodExplorerFrontRefactored'
           />
         </Element.Project>
 
