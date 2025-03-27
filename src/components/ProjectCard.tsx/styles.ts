@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  background:${(props) => props.theme['gray-500']}; 
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background:${(props) => props.theme['gray-500']}; 
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
 
   &:hover {

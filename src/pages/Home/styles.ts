@@ -74,7 +74,8 @@ export const Skills = styled.div`
   flex-wrap: wrap;
   margin-top: 4rem;
   gap: 1rem;
-
+  user-select: none;
+  
   span {
     display: flex;
     align-items: center;
@@ -83,7 +84,7 @@ export const Skills = styled.div`
     background: ${(props) => props.theme['gray-400']};
     border-radius: 99px;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-
+    
     img {
       width: 2.4rem;
       height: 2.4rem;
@@ -144,4 +145,25 @@ export const Project = styled.div.attrs({ id: 'project'})`
   @media (width <= 48em) {
     grid-template-columns: 1fr; 
   }
+`
+
+export const Contact = styled.div.attrs({ id: 'contact'})`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 15rem;
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+`
+export const ContactCards = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 `

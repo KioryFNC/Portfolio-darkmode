@@ -1,5 +1,6 @@
 import { Header } from '../../components/Header'
 import { ProjectCard } from '../../components/ProjectCard.tsx'
+import { ContactCard } from '../../components/ContactCard/index.tsx'
 
 import * as Element from './styles'
 
@@ -19,6 +20,9 @@ import Zingen from '../../assets/Projects/zingen.png'
 import Timer from '../../assets/Projects/Timer.png'
 import ToDo from '../../assets/Projects/ToDo.png'
 
+import LinkedinLogo from '../../assets/Contact/LinkedinLogo.png'
+import GithubLogo from '../../assets/Contact/GithubLogo.png'
+import EmailLogo from '../../assets/Contact/EnvelopeSimple.png'
 
 export function Home() {
   return (
@@ -103,9 +107,31 @@ export function Home() {
             codeLink='https://github.com/KioryFNC/foodExplorerFrontRefactored'
           />
         </Element.Project>
-
       </Element.MyProjects>
-
+      <Element.Contact>
+        <div className='informations'>
+          <h3>Contato</h3>
+          <h4>Vamos trabalhar juntos?</h4>
+          <span>Entre em contato comigo ou acompanhe as minhas redes sociais!</span>
+        </div>
+        <Element.ContactCards>
+          <ContactCard 
+            image={GithubLogo}
+            title='Github'
+            link='https://github.com/KioryFNC'
+          />
+          <ContactCard 
+            image={LinkedinLogo}
+            title='Linkedin'
+            link='https://www.linkedin.com/in/yuri-barros-luz-014010258/'
+          />
+          <ContactCard 
+            image={EmailLogo}
+            title='E-mail'
+            link='mailto:yuri.barros.luz.familia@gmail.com'
+          />
+        </Element.ContactCards>
+      </Element.Contact>
     </Element.Root>
   )
 }
