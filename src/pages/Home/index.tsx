@@ -9,7 +9,7 @@ import Code from '../../assets/Code.png'
 import React from '../../assets/React.svg'
 import typescript from '../../assets/typescript.svg'
 import javaScript from '../../assets/JavaScript.svg'
-import Github from '../../assets/Github.svg'
+import Github from '../../assets/GitHub.svg'
 import HTML from '../../assets/HTML.svg'
 import CSS from '../../assets/CSS.svg'
 
