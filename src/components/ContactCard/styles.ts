@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   display: flex;
+  width: 80%;
   max-width: 40rem;
   padding: 2rem;
   justify-content: space-between;
@@ -34,14 +35,11 @@ export const Card = styled.div`
 
   p {
     color:  ${(props) => props.theme['gray-200']};
+    white-space: nowrap;
   }
 
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 15px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 50rem;  
+  :last-child {
+    width: 2rem;
+    height: 2rem;
   }
 `

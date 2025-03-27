@@ -19,7 +19,7 @@ export const Root = styled.div`
 `
 
 export const MySelf = styled.div`
-  width: 100%;
+  max-width: 100rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@ export const MySelf = styled.div`
 export const About = styled.div.attrs({ id: 'about'})`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100rem;
 `
 
 export const Skills = styled.div`
@@ -163,7 +163,9 @@ export const Contact = styled.div.attrs({ id: 'contact'})`
   }
 `
 export const ContactCards = styled.div`
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 3rem;
 `
