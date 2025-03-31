@@ -19,6 +19,24 @@ export const GlobalStyle = createGlobalStyle`
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    ::-webkit-scrollbar {
+      width: 8px; 
+      height: 8px; 
+    }
+
+    ::-webkit-scrollbar-track {
+      background: ${(props) => props.theme['gray-400']};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${(props) => props.theme['green-100']};
+      border-radius: 10px; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background:rgb(93, 139, 52); 
+    }
   }
 
   html {
@@ -33,10 +51,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: url(${background}) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
@@ -64,8 +82,8 @@ export const GlobalStyle = createGlobalStyle`
     text-align: center;
     background: linear-gradient(
       95deg,
-#80E961 35%,
-#00B3FF 80%
+    #80E961 35%,
+    #00B3FF 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
