@@ -13,19 +13,29 @@ export const Root = styled.div`
 `
 
 export const ContentHeader = styled.div`
-   width: 100vw;  
-  margin-left: calc(-50vw + 50%); 
-  background-image: url(${BackgroundHeader});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100vw;
+  position: relative; 
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: calc(-50vw + 50%);
   gap: 7rem;
   padding: 4rem;
-`
-
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${BackgroundHeader});
+    background-size: 100% auto;
+    background-position: top center;
+    opacity: 0.4;
+    z-index: -1; 
+  }
+`;
 export const MySelf = styled.div`
   max-width: 100rem;
   display: flex;
@@ -159,16 +169,28 @@ export const Project = styled.div`
 `
 
 export const Contact = styled.div.attrs({ id: 'contact'})`
-  width: 100vw; 
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative; 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
   padding: 4rem;
-  margin-left: calc(-50vw + 50%);
-  background-image: url(${BackgroundContact});
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${BackgroundContact});
+    background-size: 100% auto;
+    background-position: top center;
+    opacity: 0.5;
+    z-index: -1;
+  }
 
   .informations {
     display: flex;
