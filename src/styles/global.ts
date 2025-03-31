@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import background from '../assets/Background.png'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -50,10 +49,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: url(${background}) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background: ${(props) => props.theme['gray-500']};
     overflow-x: hidden;
   }
 

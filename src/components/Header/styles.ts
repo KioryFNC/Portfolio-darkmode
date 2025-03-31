@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   width: 100%;
+  max-width: 130rem;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;

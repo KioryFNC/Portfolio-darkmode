@@ -1,21 +1,29 @@
 import styled from "styled-components";
+import BackgroundHeader from '../../assets/BackgroundHeader.png'
+import BackgroundContact from '../../assets/BackgroundContact.png'
+
 
 export const Root = styled.div`
   width: 100%;
-  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: start;
   gap: 6rem;
+`
 
-  @media (width >= 48em) {
-    padding: 4rem 10rem;
-  }
-  @media (width >= 80em) {
-    padding: 4rem 25rem;
-  }
+export const ContentHeader = styled.div`
+   width: 100vw;  
+  margin-left: calc(-50vw + 50%); 
+  background-image: url(${BackgroundHeader});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  padding: 4rem;
 `
 
 export const MySelf = styled.div`
@@ -24,6 +32,7 @@ export const MySelf = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
   gap: 1.4rem;
 
   strong {
@@ -138,6 +147,7 @@ export const Project = styled.div`
   gap: 2rem;
   max-width: 100rem;
   margin: 0 auto;
+  padding: 0 2rem;
   
   @media (width <= 64em) {
     grid-template-columns: repeat(2, 1fr); 
@@ -149,12 +159,16 @@ export const Project = styled.div`
 `
 
 export const Contact = styled.div.attrs({ id: 'contact'})`
-  width: 100%;
+  width: 100vw; 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  margin-bottom: 15rem;
+  padding: 4rem;
+  margin-left: calc(-50vw + 50%);
+  background-image: url(${BackgroundContact});
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .informations {
     display: flex;
