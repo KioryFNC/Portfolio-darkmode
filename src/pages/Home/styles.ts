@@ -91,7 +91,7 @@ export const Skills = styled.div`
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  margin: 4rem 0 10rem 0;
   gap: 1rem;
   user-select: none;
   
@@ -171,6 +171,7 @@ export const Project = styled.div`
 export const Contact = styled.div.attrs({ id: 'contact'})`
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  margin-bottom: 15rem;
   position: relative; 
   display: flex;
   flex-direction: column;
