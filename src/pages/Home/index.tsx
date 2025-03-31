@@ -1,8 +1,8 @@
+import * as Element from './styles'
+
 import { Header } from '../../components/Header'
 import { ProjectCard } from '../../components/ProjectCard.tsx'
 import { ContactCard } from '../../components/ContactCard/index.tsx'
-
-import * as Element from './styles'
 
 import Myself from '../../assets/Myself.jpg'
 import Code from '../../assets/Code.png'
@@ -24,19 +24,36 @@ import LinkedinLogo from '../../assets/Contact/LinkedinLogo.png'
 import GithubLogo from '../../assets/Contact/GithubLogo.png'
 import EmailLogo from '../../assets/Contact/EnvelopeSimple.png'
 
+import { motion } from 'framer-motion'
+
 export function Home() {
   return (
     <Element.Root>
       <Header />
-      <Element.MySelf>
-        <div>
-          <img src={Myself} alt="" />
-          <img src={Code} alt="" />
-        </div>
-        <span>Hello World! Meu nome é <strong>Yuri</strong> e sou</span>
-        <h2>Desenvolvedor Front end</h2>
-        <p>Apaixonado por Front end e estudando cada dia mais, dedicado a criar aplicativos e site que sejam responsiveis, elegantes e fáceis de usar.</p>
-      </Element.MySelf>
+
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}      
+        whileInView={{ opacity: 1, y: 0 }}      
+        transition={{ duration: 0.8 }}      
+        viewport={{ once: true }}      
+      >
+        <Element.MySelf>
+          <div>
+            <img src={Myself} alt="" />
+            <img src={Code} alt="" />
+          </div>
+          <span>Hello World! Meu nome é <strong>Yuri</strong> e sou</span>
+          <h2>Desenvolvedor Front end</h2>
+          <p>Apaixonado por Front end e estudando cada dia mais, dedicado a criar aplicativos e site que sejam responsiveis, elegantes e fáceis de usar.</p>
+        </Element.MySelf>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
       <Element.About>
         <h3>Sobre mim</h3>
         <p>
@@ -57,7 +74,14 @@ export function Home() {
         <span><img src={CSS}/> CSS</span>
         </Element.Skills>
       </Element.About>
+      </motion.div>
 
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
       <Element.MyProjects>
         <div>
           <h3>Meu <span>trabalho</span></h3>
@@ -108,6 +132,13 @@ export function Home() {
           />
         </Element.Project>
       </Element.MyProjects>
+      </motion.div>
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
       <Element.Contact>
         <div className='informations'>
           <h3>Contato</h3>
@@ -132,6 +163,7 @@ export function Home() {
           />
         </Element.ContactCards>
       </Element.Contact>
+      </motion.div>
     </Element.Root>
   )
 }

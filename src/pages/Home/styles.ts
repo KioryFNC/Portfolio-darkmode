@@ -108,13 +108,14 @@ export const Skills = styled.div`
   }
 `
 
-export const MyProjects = styled.section`
+export const MyProjects = styled.section.attrs({ id: 'project'})`
   text-align: center;
   padding: 4rem 0;
 
   div {
-    h3 span{
+    h3, h3 span{
       font-size: 2rem;
+      font-weight: bold;
     }
     
     h4 {
@@ -124,14 +125,14 @@ export const MyProjects = styled.section`
     }
     
     @media (width >= 48em) {
-      h3 span {
+      h3, h3 span {
         font-size: 3.6rem;
       }
     }
   } 
 `;
 
-export const Project = styled.div.attrs({ id: 'project'})`
+export const Project = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 2rem;
