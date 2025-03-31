@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,12 +31,14 @@ export const Card = styled.div`
   p {
     font-size: 1.4rem;
     color: #BBB;
+    flex-grow: 1;
+    margin-bottom: 1rem;
   }
 
   .buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: auto;
 
     a {
       background: #292929;
