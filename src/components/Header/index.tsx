@@ -1,8 +1,13 @@
 import * as Element from './styles'
 import Logo from '../../assets/Logo.png'
+import LogoLight from '../../assets/LogoLight.png'
 import { useEffect } from 'react'
+import { ThemeButton } from '../ThemeButton'
+import { useTheme } from 'styled-components'
 
 export function Header() {
+  const theme = useTheme()
+
   useEffect(() => {
     const handleSmoothScroll = (event: Event) => {
       const target = event.target as HTMLAnchorElement
@@ -20,7 +25,8 @@ export function Header() {
 
   return (
     <Element.Root>
-      <img src={Logo} alt="" />
+      <img src={theme.title === 'light' ? LogoLight : Logo} />
+      <ThemeButton />
       <nav>
         <a href="#about">Sobre mim</a>
         <a href="#project">Projetos</a>

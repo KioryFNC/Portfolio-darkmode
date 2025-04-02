@@ -1,13 +1,12 @@
-import { ThemeProvider } from "styled-components";
+import { ThemeProviderWrapper } from "./contexts/ThemeProvider";
 import { Home } from "./pages/Home";
-import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Home />
+    <ThemeProviderWrapper>
       <GlobalStyle />
-    </ThemeProvider>
-  )
+      <Home />
+    </ThemeProviderWrapper>
+  );
 }

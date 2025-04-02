@@ -2,7 +2,6 @@ import styled from "styled-components";
 import BackgroundHeader from '../../assets/BackgroundHeader.png'
 import BackgroundContact from '../../assets/BackgroundContact.png'
 
-
 export const Root = styled.div`
   width: 100%;
   display: flex;
@@ -10,6 +9,8 @@ export const Root = styled.div`
   align-items: center;
   text-align: start;
   gap: 6rem;
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.textColor};
 `
 
 export const ContentHeader = styled.div`
@@ -46,7 +47,7 @@ export const MySelf = styled.div`
   gap: 1.4rem;
 
   strong {
-    background: linear-gradient(90deg, rgb(240, 67, 139) 0%, #8b5cf6 100%);
+    background: linear-gradient(90deg, ${(props) => props.theme.gradientStart} 0%, ${(props) => props.theme.gradientEnd} 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -59,7 +60,7 @@ export const MySelf = styled.div`
   div img:first-child {
     border-radius: 50%;
     width: 12rem;
-    border: 2px solid ${(props) => props.theme['green-100']};
+    border: 2px solid ${(props) => props.theme.scrollbarThumb};
     padding: .5rem;
     height: 12rem;
   }
@@ -100,7 +101,7 @@ export const Skills = styled.div`
     align-items: center;
     padding: 1rem;
     gap: .3rem;
-    background: ${(props) => props.theme['gray-400']};
+    background: ${(props) => props.theme.scrollbarTrack};
     border-radius: 99px;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
     
@@ -111,7 +112,7 @@ export const Skills = styled.div`
 
     &:hover {
       transform: scale(1.1);
-      background: linear-gradient(90deg, rgb(240, 67, 139) 0%, #8b5cf6 100%);
+      background: linear-gradient(90deg, ${(props) => props.theme.gradientStart} 0%, ${(props) => props.theme.gradientEnd} 100%);
     }
   }
 
@@ -140,7 +141,7 @@ export const MyProjects = styled.section.attrs({ id: 'project'})`
     h4 {
       font-weight: bold;
       margin-bottom: 2rem;
-      color: ${(props) => props.theme['gray-100']};
+      color: ${(props) => props.theme.textColor};
     }
     
     @media (width >= 48em) {

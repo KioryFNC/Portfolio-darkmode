@@ -9,14 +9,14 @@ export const Card = styled.div`
   align-items: center;
   gap: 1.2rem;
   border-radius: 8px;
-  background: ${(props) => props.theme['gray-400']};
+  background: ${(props) => props.theme.background};
   text-decoration: none;
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
 
   &:hover {
-    border-color: ${(props) => props.theme['green-100']};
+    border-color: ${(props) => props.theme.scrollbarThumb};
     transform: scale(1.05);
   }
   
@@ -34,7 +34,7 @@ export const Card = styled.div`
   }
 
   p {
-    color:  ${(props) => props.theme['gray-200']};
+    color:  ${(props) => props.theme.textColor};
     white-space: nowrap;
   }
 

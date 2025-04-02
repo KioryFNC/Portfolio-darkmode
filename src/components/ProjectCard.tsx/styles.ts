@@ -9,13 +9,13 @@ export const Card = styled.div`
   text-align: center;
   padding: 1.5rem;
   border-radius: 8px;
-  background:${(props) => props.theme['gray-500']}; 
+  background: ${(props) => props.theme.background}; 
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
 
   &:hover {
-    border-color: ${(props) => props.theme['green-100']};
+    border-color: ${(props) => props.theme.scrollbarThumb};
     transform: scale(1.05);
   }
 
@@ -26,12 +26,12 @@ export const Card = styled.div`
 
   h4 {
     margin: 1rem 0;
-    color: ${(props) => props.theme['gray-100']};
+    color: ${(props) => props.theme.textColor};
   }
 
   p {
     font-size: 1.4rem;
-    color: #BBB;
+    color: ${(props) => props.theme.textColor};
     flex-grow: 1;
     margin-bottom: 1rem;
   }
@@ -42,8 +42,8 @@ export const Card = styled.div`
     margin-top: auto;
 
     a {
-      background: #292929;
-      color: #FFF;
+      background: ${(props) => props.theme.scrollbarTrack};
+      color: ${(props) => props.theme.textColor};
       padding: 0.6rem 1.2rem;
       font-size: var(--fs-base);
       border-radius: 6px;
@@ -53,9 +53,9 @@ export const Card = styled.div`
       border: 1px solid transparent;
 
       &:hover {
-        background: ${(props) => props.theme['green-100']};
-        color: #292929;
-        border-color: #fff;
+        background: ${(props) => props.theme.scrollbarThumb};
+        color: ${(props) => props.theme.background};
+        border-color: ${(props) => props.theme.textColor};
       }
     }
   }

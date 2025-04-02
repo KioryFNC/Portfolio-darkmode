@@ -25,16 +25,16 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-track {
-      background: ${(props) => props.theme['gray-400']};
+      background: ${(props) => props.theme.scrollbarTrack};
     }
 
     ::-webkit-scrollbar-thumb {
-      background: ${(props) => props.theme['green-100']};
+      background: ${(props) => props.theme.scrollbarThumb};
       border-radius: 10px; 
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background:rgb(93, 139, 52); 
+      background: ${(props) => props.theme.scrollbarThumbHover};
     }
   }
 
@@ -43,13 +43,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: ${(props) => props.theme['gray-100']};
+    color: ${(props) => props.theme.textColor};
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
 
   body {
-    background: ${(props) => props.theme['gray-500']};
+    background: ${(props) => props.theme.background};
     overflow-x: hidden;
   }
 
@@ -78,8 +78,8 @@ export const GlobalStyle = createGlobalStyle`
     text-align: center;
     background: linear-gradient(
       95deg,
-    #80E961 35%,
-    #00B3FF 80%
+      ${(props) => props.theme.gradientStart} 35%,
+      ${(props) => props.theme.gradientEnd} 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -99,8 +99,8 @@ export const GlobalStyle = createGlobalStyle`
   a:hover {
     background: linear-gradient(
       95deg,
-      #80E961 35%,
-      #00B3FF 80%
+      ${(props) => props.theme.gradientStart} 35%,
+      ${(props) => props.theme.gradientEnd} 80%
     );
     -webkit-background-clip: text;
     background-clip: text;

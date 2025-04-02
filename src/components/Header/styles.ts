@@ -8,6 +8,12 @@ export const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  img {
+    width: 30rem;
+    height: 12rem;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -15,7 +21,7 @@ export const Root = styled.div`
     white-space: nowrap;
     gap: 2rem;
     a {
-      border: 1px solid ${(props) => props.theme['gray-300']};
+      border: 1px solid ${(props) => props.theme.textColor};
       padding: 1rem;
       border-radius: 99px;
     }
