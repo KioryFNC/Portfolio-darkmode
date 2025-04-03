@@ -1,6 +1,7 @@
 export const lightTheme = {
   title: "light",
   background: "#C0C4CE",
+  backgroundButton: "#00a6ff",
   textColor: "#000000",
   scrollbarTrack: "#E2E4E9",
   scrollbarThumb: "#f0438b",
@@ -12,6 +13,7 @@ export const lightTheme = {
 export const darkTheme = {
   title: "dark",
   background: "#16181D",
+  backgroundButton: "#2a2a2a",
   textColor: "#E2E4E9",
   scrollbarTrack: "#292C34",
   scrollbarThumb: "#82BC4F",
