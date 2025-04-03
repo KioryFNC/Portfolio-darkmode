@@ -26,12 +26,14 @@ export function Header() {
   return (
     <Element.Root>
       <img src={theme.title === 'light' ? LogoLight : Logo} />
-      <ThemeButton />
-      <nav>
-        <a href="#about">Sobre mim</a>
-        <a href="#project">Projetos</a>
-        <a href="#contact">Contato</a>
-      </nav>
+      <div>
+        <nav>
+          <a href="#about">Sobre mim</a>
+          <a href="#project">Projetos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <ThemeButton />
+      </div>
     </Element.Root>
   )
 }

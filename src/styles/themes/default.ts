@@ -1,3 +1,6 @@
+import BackgroundHeaderLight from '../../assets/BackgroundHeaderLight.jpg' 
+import BackgroundHeader from '../../assets/BackgroundHeader.png' 
+
 export const lightTheme = {
   title: "light",
   background: "#C0C4CE",
@@ -9,6 +12,7 @@ export const lightTheme = {
   gradientStart: "#f0438b",
   gradientEnd: "#8b5cf6",
   shadowColor: "rgba(0, 0, 0, 0.6)",
+  backgroundImage: BackgroundHeaderLight
 };
 
 export const darkTheme = {
@@ -22,4 +26,5 @@ export const darkTheme = {
   gradientStart: "#80E961",
   gradientEnd: "#00B3FF",
   shadowColor: "rgba(255, 255, 255, 0.4)",
+  backgroundImage: BackgroundHeader
 };

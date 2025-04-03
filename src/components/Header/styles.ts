@@ -5,9 +5,9 @@ export const Root = styled.div`
   max-width: 130rem;
   padding: 0 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 
   img {
     width: 30rem;
@@ -28,7 +28,18 @@ export const Root = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    div {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   }
 `

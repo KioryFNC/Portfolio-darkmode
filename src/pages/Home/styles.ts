@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import BackgroundHeader from '../../assets/BackgroundHeader.png'
-import BackgroundContact from '../../assets/BackgroundContact.png'
 
 export const Root = styled.div`
   width: 100%;
@@ -9,8 +7,8 @@ export const Root = styled.div`
   align-items: center;
   text-align: start;
   gap: 6rem;
-  background: ${(props) => props.theme.background};
   color: ${(props) => props.theme.textColor};
+  transition: color 0.4s ease-in-out;
 `
 
 export const ContentHeader = styled.div`
@@ -30,11 +28,13 @@ export const ContentHeader = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(${BackgroundHeader});
+    background-image: ${(props) => `url(${props.theme.backgroundImage})`}; 
     background-size: 100% auto;
     background-position: top center;
     opacity: 0.4;
     z-index: -1; 
+    transition: background-image 0.4s ease-in-out;
+
   }
 `;
 export const MySelf = styled.div`
@@ -172,7 +172,6 @@ export const Project = styled.div`
 export const Contact = styled.div.attrs({ id: 'contact'})`
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  margin-bottom: 15rem;
   position: relative; 
   display: flex;
   flex-direction: column;
@@ -187,7 +186,7 @@ export const Contact = styled.div.attrs({ id: 'contact'})`
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(${BackgroundContact});
+    background-image: ${(props) => `url(${props.theme.backgroundImage})`};
     background-size: 100% auto;
     background-position: top center;
     opacity: 0.5;
@@ -207,4 +206,5 @@ export const ContactCards = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 3rem;
+  margin-bottom: 10rem;
 `

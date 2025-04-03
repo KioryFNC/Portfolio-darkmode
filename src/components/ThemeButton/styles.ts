@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
 export const ThemeToggleWrapper = styled.label`
+  margin-left: 1rem;
   position: relative;
   display: inline-block;
-  width: 4.5em;
+  min-width: 4.5em;
   height: 2.2em;
   font-size: 1.7rem;
   border-radius: 30px;
   box-shadow: 0 0 10px ${(props) => props.theme.shadowColor};
   cursor: pointer;
+
+  @media (max-width: 1280px) {
+    min-width: 4em;
+    max-width: 4em;
+  }
 `;
 
 export const ThemeToggleInput = styled.input`
