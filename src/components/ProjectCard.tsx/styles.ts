@@ -12,7 +12,7 @@ export const Card = styled.div`
   background: ${(props) => props.theme.background}; 
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 10px ${(props) => props.theme.shadowColor};
 
   &:hover {
     border-color: ${(props) => props.theme.scrollbarThumb};

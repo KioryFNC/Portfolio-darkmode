@@ -8,6 +8,7 @@ export const lightTheme = {
   scrollbarThumbHover: "#5D8B34",
   gradientStart: "#f0438b",
   gradientEnd: "#8b5cf6",
+  shadowColor: "rgba(0, 0, 0, 0.6)",
 };
 
 export const darkTheme = {
@@ -20,4 +21,5 @@ export const darkTheme = {
   scrollbarThumbHover: "#5D8B34",
   gradientStart: "#80E961",
   gradientEnd: "#00B3FF",
+  shadowColor: "rgba(255, 255, 255, 0.4)",
 };

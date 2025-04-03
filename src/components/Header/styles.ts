@@ -24,6 +24,7 @@ export const Root = styled.div`
       border: 1px solid ${(props) => props.theme.textColor};
       padding: 1rem;
       border-radius: 99px;
+      box-shadow: 0px 2px 10px ${(props) => props.theme.shadowColor};
     }
   }
 

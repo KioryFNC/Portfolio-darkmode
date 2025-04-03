@@ -7,7 +7,7 @@ export const ThemeToggleWrapper = styled.label`
   height: 2.2em;
   font-size: 1.7rem;
   border-radius: 30px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px ${(props) => props.theme.shadowColor};
   cursor: pointer;
 `;
 
