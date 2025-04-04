@@ -1,15 +1,9 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../contexts/ThemeContext";
+import { useTheme } from "../../contexts/ThemeContext";
 import * as Element from "./styles";
 
 export function ThemeButton() {
-  const themeContext = useContext(ThemeContext);
 
-  if (!themeContext) {
-    return null;
-  }
-
-  const { isDarkMode, toggleTheme } = themeContext;
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <Element.ThemeToggleWrapper>

@@ -1,12 +1,12 @@
-import { ThemeProviderWrapper } from "./contexts/ThemeProvider";
+import { ThemeProvider } from "./contexts/ThemeProvider";
 import { Home } from "./pages/Home";
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
-    <ThemeProviderWrapper>
+    <ThemeProvider>
       <GlobalStyle />
       <Home />
-    </ThemeProviderWrapper>
+    </ThemeProvider>
   );
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect, ReactNode } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider as Provider } from "styled-components";
 import { ThemeContext } from "./ThemeContext";
 import { lightTheme, darkTheme } from "../styles/themes/default";
 
@@ -7,7 +7,7 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export function ThemeProviderWrapper({ children }: ThemeProviderProps) {
+export function ThemeProvider({ children }: ThemeProviderProps) {
   const storedTheme = localStorage.getItem("theme") === "dark";
   const [isDarkMode, setIsDarkMode] = useState(storedTheme);
 
@@ -21,9 +21,9 @@ export function ThemeProviderWrapper({ children }: ThemeProviderProps) {
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      <Provider theme={isDarkMode ? darkTheme : lightTheme}>
         {children}
-      </ThemeProvider>
+      </Provider>
     </ThemeContext.Provider>
   );
 }
