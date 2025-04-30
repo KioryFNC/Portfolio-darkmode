@@ -9,18 +9,18 @@ export const Root = styled.div`
   gap: 6rem;
   color: ${(props) => props.theme.textColor};
   transition: color 0.4s ease-in-out;
-`
+`;
 
 export const ContentHeader = styled.div`
   width: 100vw;
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: calc(-50vw + 50%);
   gap: 7rem;
   padding: 4rem;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -28,13 +28,12 @@ export const ContentHeader = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: ${(props) => `url(${props.theme.backgroundImage})`}; 
+    background-image: ${(props) => `url(${props.theme.backgroundImage})`};
     background-size: 100% auto;
     background-position: top center;
     opacity: 0.4;
-    z-index: -1; 
+    z-index: -1;
     transition: background-image 0.4s ease-in-out;
-
   }
 `;
 export const MySelf = styled.div`
@@ -47,7 +46,11 @@ export const MySelf = styled.div`
   gap: 1.4rem;
 
   strong {
-    background: linear-gradient(90deg, ${(props) => props.theme.gradientStart} 0%, ${(props) => props.theme.gradientEnd} 100%);
+    background: linear-gradient(
+      90deg,
+      ${(props) => props.theme.gradientStart} 0%,
+      ${(props) => props.theme.gradientEnd} 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -61,7 +64,7 @@ export const MySelf = styled.div`
     border-radius: 50%;
     width: 12rem;
     border: 2px solid ${(props) => props.theme.scrollbarThumb};
-    padding: .5rem;
+    padding: 0.5rem;
     height: 12rem;
   }
 
@@ -69,7 +72,7 @@ export const MySelf = styled.div`
     width: 4rem;
     height: 4rem;
     position: absolute;
-    bottom: .5rem;
+    bottom: 0.5rem;
     right: -1.5rem;
   }
 
@@ -78,13 +81,13 @@ export const MySelf = styled.div`
       text-align: center;
     }
   }
-`
+`;
 
-export const About = styled.div.attrs({ id: 'about'})`
+export const About = styled.div.attrs({ id: "about" })`
   display: flex;
   flex-direction: column;
   max-width: 100rem;
-`
+`;
 
 export const Skills = styled.div`
   width: 100%;
@@ -95,16 +98,16 @@ export const Skills = styled.div`
   margin: 4rem 0 10rem 0;
   gap: 1rem;
   user-select: none;
-  
+
   span {
     display: flex;
     align-items: center;
     padding: 1rem;
-    gap: .3rem;
+    gap: 0.3rem;
     background: ${(props) => props.theme.scrollbarTrack};
     border-radius: 99px;
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-    
+
     img {
       width: 2.4rem;
       height: 2.4rem;
@@ -112,7 +115,11 @@ export const Skills = styled.div`
 
     &:hover {
       transform: scale(1.1);
-      background: linear-gradient(90deg, ${(props) => props.theme.gradientStart} 0%, ${(props) => props.theme.gradientEnd} 100%);
+      background: linear-gradient(
+        90deg,
+        ${(props) => props.theme.gradientStart} 0%,
+        ${(props) => props.theme.gradientEnd} 100%
+      );
     }
   }
 
@@ -122,57 +129,59 @@ export const Skills = styled.div`
 
   @media (max-width: 480px) {
     span {
-      flex: 1 1 40%; 
+      flex: 1 1 40%;
       max-width: 120px;
     }
   }
-`
+`;
 
-export const MyProjects = styled.section.attrs({ id: 'project'})`
+export const MyProjects = styled.section.attrs({ id: "project" })`
   text-align: center;
   padding: 4rem 0;
 
   div {
-    h3, h3 span{
+    h3,
+    h3 span {
       font-size: 2rem;
       font-weight: bold;
     }
-    
+
     h4 {
       font-weight: bold;
       margin-bottom: 2rem;
       color: ${(props) => props.theme.textColor};
     }
-    
+
     @media (width >= 48em) {
-      h3, h3 span {
+      h3,
+      h3 span {
         font-size: 3.6rem;
       }
     }
-  } 
+  }
 `;
 
 export const Project = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 2rem;
-  
-  @media (width <= 64em) {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  
-  @media (width <= 48em) {
-    grid-template-columns: 1fr; 
-  }
-`
 
-export const Contact = styled.div.attrs({ id: 'contact'})`
+  @media (width <= 64em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (width <= 48em) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const Contact = styled.div.attrs({ id: "contact" })`
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,7 +208,7 @@ export const Contact = styled.div.attrs({ id: 'contact'})`
     align-items: center;
     gap: 1rem;
   }
-`
+`;
 export const ContactCards = styled.div`
   width: 100%;
   display: flex;
@@ -207,4 +216,4 @@ export const ContactCards = styled.div`
   flex-direction: column;
   gap: 3rem;
   margin-bottom: 10rem;
-`
+`;
