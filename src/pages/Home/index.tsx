@@ -12,6 +12,7 @@ import javaScript from "../../assets/JavaScript.svg";
 import Github from "../../assets/GitHub.svg";
 import HTML from "../../assets/HTML.svg";
 import CSS from "../../assets/CSS.svg";
+import tailwind from "../../assets/tailwind.svg";
 
 import CoffeeDelivery from "../../assets/Projects/CoffeeDelivery.png";
 import GTA from "../../assets/Projects/GTA.png";
@@ -93,6 +94,7 @@ export function Home() {
                 { img: Github, name: "Github" },
                 { img: HTML, name: "HTML" },
                 { img: CSS, name: "CSS" },
+                { img: tailwind, name: "Tailwind" },
               ].map((skill, index) => (
                 <motion.span
                   key={skill.name}
