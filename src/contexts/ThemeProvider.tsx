@@ -8,8 +8,10 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const storedTheme = localStorage.getItem("theme") === "dark";
-  const [isDarkMode, setIsDarkMode] = useState(storedTheme);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const stored = localStorage.getItem("theme");
+    return stored ? stored === "dark" : true;
+  });
 
   useEffect(() => {
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
