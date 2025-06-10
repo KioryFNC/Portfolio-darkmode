@@ -16,7 +16,7 @@ import tailwind from "../../assets/tailwind.svg";
 
 import CoffeeDelivery from "../../assets/Projects/CoffeeDelivery.png";
 import GTA from "../../assets/Projects/GTA.png";
-import FoodExplorer from "../../assets/Projects/FoodExplorer.png";
+import Drift from "../../assets/Projects/drift.png";
 import Timer from "../../assets/Projects/Timer.png";
 import ToDo from "../../assets/Projects/ToDo.png";
 import Patins from "../../assets/Projects/patins.png";
@@ -165,13 +165,12 @@ export function Home() {
                 codeLink: "https://github.com/KioryFNC/stydyingFiveM",
               },
               {
-                image: FoodExplorer,
-                title: "FoodExplorer",
+                image: Drift,
+                title: "Drift",
                 description:
-                  "Projeto que fiz na metade de 2024, mas não completei o projeto porque foquei em outros, mas deixei responsivo.",
-                siteLink: "https://food-explorer-front-refactored.vercel.app/",
-                codeLink:
-                  "https://github.com/KioryFNC/foodExplorerFrontRefactored",
+                  "Projeto focado em um piloto de drift, divulgado foto do trabalho dele, patrocinadores, contato direto pelo site.",
+                siteLink: "https://drift-mu.vercel.app/",
+                codeLink: "https://github.com/KioryFNC/Drift",
               },
             ].map((project, index) => (
               <motion.div
