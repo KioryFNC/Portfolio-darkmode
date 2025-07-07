@@ -28,6 +28,11 @@ Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolve
     workTogether: "Vamos trabalhar juntos?",
     reachOut: "Entre em contato comigo ou acompanhe as minhas redes sociais!",
 
+    projectCard: {
+      site: "Site",
+      code: "Código",
+    },
+
     projects: {
       coffee: "Coffee Delivery é uma página web de catálogo e compra de cafés.",
       todo: "Página web para criação e controle de tarefas.",
@@ -67,6 +72,11 @@ Always seeking new challenges, I’m committed to growing as a developer and con
     contact: "Contact",
     workTogether: "Shall we work together?",
     reachOut: "Get in touch or follow me on social media!",
+
+    projectCard: {
+      site: "Live",
+      code: "Code",
+    },
 
     projects: {
       coffee: "Coffee Delivery is a web page for catalog and coffee purchase.",
