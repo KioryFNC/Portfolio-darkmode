@@ -1,6 +1,11 @@
 // src/utils/translations.ts
 export const translations = {
   pt: {
+    menu: {
+      about: "Sobre mim",
+      projects: "Projetos",
+      contact: "Contato",
+    },
     hello: "Hello World! Meu nome é",
     role: "Desenvolvedor Front end",
     description:
@@ -36,6 +41,11 @@ Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolve
     },
   },
   en: {
+    menu: {
+      about: "About me",
+      projects: "Projects",
+      contact: "Contact",
+    },
     hello: "Hello World! My name is",
     role: "Front-end Developer",
     description:

@@ -5,9 +5,14 @@ import { useEffect } from "react";
 import { ThemeButton } from "../ThemeButton";
 import { LanguageButton } from "../LanguegeButton";
 import { useTheme } from "styled-components";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../utils/translations";
 
 export function Header() {
   const theme = useTheme();
+
+  const { language } = useLanguage();
+  const t = translations[language];
 
   useEffect(() => {
     const handleSmoothScroll = (event: Event) => {
@@ -29,9 +34,9 @@ export function Header() {
       <img src={theme.title === "light" ? LogoLight : Logo} />
       <div>
         <nav>
-          <a href="#about">Sobre mim</a>
-          <a href="#project">Projetos</a>
-          <a href="#contact">Contato</a>
+          <a href="#about">{t.menu.about}</a>
+          <a href="#project">{t.menu.projects}</a>
+          <a href="#contact">{t.menu.contact}</a>
         </nav>
         <ThemeButton />
         <LanguageButton />
