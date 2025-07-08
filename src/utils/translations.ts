@@ -1,4 +1,3 @@
-// src/utils/translations.ts
 export const translations = {
   pt: {
     menu: {
@@ -6,7 +5,7 @@ export const translations = {
       projects: "Projetos",
       contact: "Contato",
     },
-    hello: "Hello World! Meu nome é",
+    hello: "Olá Mundo! Meu nome é",
     role: "Desenvolvedor Front end",
     description:
       "Apaixonado por Front end e estudando cada dia mais, dedicado a criar aplicativos e site que sejam responsiveis, elegantes e fáceis de usar.",
@@ -31,6 +30,12 @@ Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolve
     projectCard: {
       site: "Site",
       code: "Código",
+    },
+
+    contactCard: {
+      github: "Github",
+      linkedin: "Linkedin",
+      email: "E-mail",
     },
 
     projects: {
@@ -76,6 +81,12 @@ Always seeking new challenges, I’m committed to growing as a developer and con
     projectCard: {
       site: "Live",
       code: "Code",
+    },
+
+    contactCard: {
+      github: "Github",
+      linkedin: "LinkedIn",
+      email: "Email",
     },
 
     projects: {

@@ -27,7 +27,13 @@ import EmailLogo from "../../assets/Contact/EnvelopeSimple.png";
 
 import { motion } from "framer-motion";
 
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../utils/translations";
+
 export function Home() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <Element.Root>
       <Element.ContentHeader>
@@ -44,14 +50,11 @@ export function Home() {
               <img src={Code} alt="" />
             </div>
             <span>
-              Hello World! Meu nome é <strong>Yuri</strong> e sou
+              {t.hello} <strong>Yuri</strong>{" "}
+              {language === "pt" ? "e sou" : "and I'm"}
             </span>
-            <h2>Desenvolvedor Front end</h2>
-            <p>
-              Apaixonado por Front end e estudando cada dia mais, dedicado a
-              criar aplicativos e site que sejam responsiveis, elegantes e
-              fáceis de usar.
-            </p>
+            <h2>{t.role}</h2>
+            <p>{t.description}</p>
           </Element.MySelf>
         </motion.div>
 
@@ -62,30 +65,8 @@ export function Home() {
           viewport={{ once: true }}
         >
           <Element.About>
-            <h3>Sobre mim</h3>
-            <p>
-              Apaixonado por tecnologia e aprendizado contínuo, estou
-              desenvolvendo minha carreira em Desenvolvimento Web Front-End, com
-              foco em JavaScript, TypeScript e React. Tenho experiência com
-              styled-components, Clean Code e Componentização, criando
-              interfaces modernas, responsivas e eficientes.
-              <br /> <br />
-              Além disso, tenho conhecimento em Git/GitHub para controle de
-              versão e colaboração em projetos. Atualmente, continuo aprimorando
-              minhas habilidades como dev estudando diariamente e em Inglês
-              atualmente cursando Nivel intermediario na Cultura Inglesa,
-              ampliando minha capacidade de comunicação no ambiente global de
-              tecnologia.
-              <br /> <br />
-              Sou um Profissional dedicado, com experiência em gestão de
-              estoque, vendas online e suporte administrativo. Possuo
-              habilidades em organização, comunicação eficaz e trabalho em
-              equipe, sempre buscando aprimorar processos e otimizar resultados.
-              <br /> <br />
-              Sempre em busca de novos desafios, estou comprometido em evoluir
-              como desenvolvedor e contribuir positivamente para projetos
-              inovadores.
-            </p>
+            <h3>{t.aboutTitle}</h3>
+            <p>{t.aboutText}</p>
             <Element.Skills>
               {[
                 { img: React, name: "React" },
@@ -118,57 +99,50 @@ export function Home() {
       >
         <Element.MyProjects>
           <div>
-            <h3>
-              Meu <span>trabalho</span>
-            </h3>
-            <h4>Veja os projetos em destaque</h4>
+            <h3>{t.myWork}</h3>
+            <h4>{t.featuredProjects}</h4>
           </div>
           <Element.Project>
             {[
               {
                 image: CoffeeDelivery,
                 title: "CoffeeDelivery",
-                description:
-                  "Coffee Delivery é uma página web de catálogo e compra de cafés.",
+                description: t.projects.coffee,
                 siteLink: "https://coffee-delivery-nu-liard.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/coffeeDelivery",
               },
               {
                 image: ToDo,
                 title: "ToDo-List",
-                description: "Página web para criação e controle de tarefas.",
+                description: t.projects.todo,
                 siteLink: "https://todo-list-lilac-phi.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/todoList",
               },
               {
                 image: Patins,
                 title: "Patins",
-                description:
-                  "Landing Page responsiva de um patins com muitas animações e transições!",
+                description: t.projects.patins,
                 siteLink: "https://pizza-shop-5o8w.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/patins-animation",
               },
               {
                 image: Timer,
                 title: "Timer",
-                description:
-                  "Projeto onde coloca um Timer que pode ser interrompido durante o processo, acabar com o tempo ou em processo. e uma pagina de historico com os detalhes.",
+                description: t.projects.timer,
                 siteLink: "https://timer-ig-three.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/IgniteTimer",
               },
               {
                 image: GTA,
                 title: "GTA FiveM",
-                description:
-                  "Aplicação onde tem lista de players e pode adicionar um novo play, procurar, excluir ou mudar sua hierarquia de cargo.",
+                description: t.projects.gta,
                 siteLink: "https://five-m-six.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/stydyingFiveM",
               },
               {
                 image: Drift,
                 title: "Drift",
-                description:
-                  "Projeto focado em um piloto de drift, divulgado foto do trabalho dele, patrocinadores, contato direto pelo site.",
+                description: t.projects.drift,
                 siteLink: "https://drift-mu.vercel.app/",
                 codeLink: "https://github.com/KioryFNC/Drift",
               },
@@ -196,11 +170,9 @@ export function Home() {
           viewport={{ once: true }}
           style={{ textAlign: "center" }}
         >
-          <h3>Contato</h3>
-          <h4>Vamos trabalhar juntos?</h4>
-          <span>
-            Entre em contato comigo ou acompanhe as minhas redes sociais!
-          </span>
+          <h3>{t.contact}</h3>
+          <h4>{t.workTogether}</h4>
+          <span>{t.reachOut}</span>
         </motion.div>
 
         <motion.div
@@ -219,7 +191,7 @@ export function Home() {
               },
               {
                 image: LinkedinLogo,
-                title: "Linkedin",
+                title: "LinkedIn",
                 link: "https://www.linkedin.com/in/yuri-barros-luz-014010258/",
               },
               {
