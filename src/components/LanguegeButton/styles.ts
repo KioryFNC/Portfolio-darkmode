@@ -35,16 +35,16 @@ export const LanguageToggleSlider = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 `;
 
-export const PTLabel = styled.span`
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-`;
-
-export const ENLabel = styled.span`
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
+export const FlagImage = styled.img`
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
 `;
