@@ -29,7 +29,6 @@ export const LanguageToggleSlider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: ${({ theme }) => theme.backgroundButton};
   transition: background-color 0.4s ease-in-out;
   border-radius: 30px;
   display: flex;
@@ -41,6 +40,20 @@ export const LanguageToggleSlider = styled.span`
     height: 1.8em;
     border-radius: 50%;
     object-fit: cover;
+  }
+  &:hover {
+    background-color: ${({ theme }) => theme.hoverButton || "#666"};
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  &:active {
+    background-color: ${({ theme }) => theme.activeButton || "#444"};
+    transform: scale(0.95);
+    img {
+      transform: scale(0.95);
+    }
   }
 `;
 
