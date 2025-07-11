@@ -13,11 +13,11 @@ export const translations = {
     aboutTitle: "Sobre mim",
     aboutText: `Apaixonado por tecnologia e aprendizado contínuo, estou desenvolvendo minha carreira em Desenvolvimento Web Front-End, com foco em JavaScript, TypeScript e React. Tenho experiência com styled-components, Clean Code e Componentização, criando interfaces modernas, responsivas e eficientes.
 
-Além disso, tenho conhecimento em Git/GitHub para controle de versão e colaboração em projetos. Atualmente, continuo aprimorando minhas habilidades como dev estudando diariamente e em Inglês atualmente cursando Nivel intermediario na Cultura Inglesa, ampliando minha capacidade de comunicação no ambiente global de tecnologia.
+      Além disso, tenho conhecimento em Git/GitHub para controle de versão e colaboração em projetos. Atualmente, continuo aprimorando minhas habilidades como dev estudando diariamente e em Inglês atualmente cursando Nivel intermediario na Cultura Inglesa, ampliando minha capacidade de comunicação no ambiente global de tecnologia.
 
-Sou um Profissional dedicado, com experiência em gestão de estoque, vendas online e suporte administrativo. Possuo habilidades em organização, comunicação eficaz e trabalho em equipe, sempre buscando aprimorar processos e otimizar resultados.
+      Sou um Profissional dedicado, com experiência em gestão de estoque, vendas online e suporte administrativo. Possuo habilidades em organização, comunicação eficaz e trabalho em equipe, sempre buscando aprimorar processos e otimizar resultados.
 
-Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolvedor e contribuir positivamente para projetos inovadores.`,
+      Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolvedor e contribuir positivamente para projetos inovadores.`,
 
     skills: "Habilidades",
     myWork: "Meu trabalho",

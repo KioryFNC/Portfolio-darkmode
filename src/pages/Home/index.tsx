@@ -66,7 +66,9 @@ export function Home() {
         >
           <Element.About>
             <h3>{t.aboutTitle}</h3>
-            <p>{t.aboutText}</p>
+            {t.aboutText.split("\n\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
             <Element.Skills>
               {[
                 { img: React, name: "React" },

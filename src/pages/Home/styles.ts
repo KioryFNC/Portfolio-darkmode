@@ -87,6 +87,14 @@ export const About = styled.div.attrs({ id: "about" })`
   display: flex;
   flex-direction: column;
   max-width: 100rem;
+
+  p {
+    text-indent: 2rem;
+  }
+
+  p + p {
+    margin-top: 2rem;
+  }
 `;
 
 export const Skills = styled.div`
