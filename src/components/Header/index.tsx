@@ -7,8 +7,13 @@ import { LanguageButton } from "../LanguegeButton";
 import { useTheme } from "styled-components";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
+import hoverSoundFile from "../../assets/sounds/hover1.mp3";
+import clickSoundFile from "../../assets/sounds/click.mp3";
 
 export function Header() {
+  const hoverSound = new Audio(hoverSoundFile);
+  const clickSound = new Audio(clickSoundFile);
+
   const theme = useTheme();
 
   const { language } = useLanguage();
@@ -34,9 +39,27 @@ export function Header() {
       <img src={theme.title === "light" ? LogoLight : Logo} />
       <div>
         <nav>
-          <a href="#about">{t.menu.about}</a>
-          <a href="#project">{t.menu.projects}</a>
-          <a href="#contact">{t.menu.contact}</a>
+          <a
+            href="#about"
+            onMouseEnter={() => hoverSound.play()}
+            onClick={() => clickSound.play()}
+          >
+            {t.menu.about}
+          </a>
+          <a
+            href="#project"
+            onMouseEnter={() => hoverSound.play()}
+            onClick={() => clickSound.play()}
+          >
+            {t.menu.projects}
+          </a>
+          <a
+            href="#contact"
+            onMouseEnter={() => hoverSound.play()}
+            onClick={() => clickSound.play()}
+          >
+            {t.menu.contact}
+          </a>
         </nav>
         <ThemeButton />
         <LanguageButton />
