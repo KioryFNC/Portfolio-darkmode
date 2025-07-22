@@ -6,13 +6,14 @@ import { ContactCard } from "../../components/ContactCard/index.tsx";
 
 import Myself from "../../assets/Myself.jpg";
 import Code from "../../assets/Code.png";
-import React from "../../assets/React.svg";
-import typescript from "../../assets/typescript.svg";
-import javaScript from "../../assets/JavaScript.svg";
-import Github from "../../assets/GitHub.svg";
-import HTML from "../../assets/HTML.svg";
-import CSS from "../../assets/CSS.svg";
-import tailwind from "../../assets/tailwind.svg";
+
+import React from "../../assets/skills/React.svg";
+import typescript from "../../assets/skills/typescript.svg";
+import javaScript from "../../assets/skills/JavaScript.svg";
+import Github from "../../assets/skills/GitHub.svg";
+import HTML from "../../assets/skills/HTML.svg";
+import CSS from "../../assets/skills/CSS.svg";
+import tailwind from "../../assets/skills/tailwind.svg";
 
 import CoffeeDelivery from "../../assets/Projects/CoffeeDelivery.png";
 import GTA from "../../assets/Projects/GTA.png";
