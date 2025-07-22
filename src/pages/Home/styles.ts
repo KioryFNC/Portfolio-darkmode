@@ -97,52 +97,6 @@ export const About = styled.div.attrs({ id: "about" })`
   }
 `;
 
-export const Skills = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  flex-wrap: wrap;
-  margin: 4rem 0 10rem 0;
-  gap: 1rem;
-  user-select: none;
-
-  span {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 0.3rem;
-    background: ${(props) => props.theme.scrollbarTrack};
-    border-radius: 99px;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-
-    img {
-      width: 2.4rem;
-      height: 2.4rem;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-      background: linear-gradient(
-        90deg,
-        ${(props) => props.theme.gradientStart} 0%,
-        ${(props) => props.theme.gradientEnd} 100%
-      );
-    }
-  }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
-
-  @media (max-width: 480px) {
-    span {
-      flex: 1 1 40%;
-      max-width: 120px;
-    }
-  }
-`;
-
 export const MyProjects = styled.section.attrs({ id: "project" })`
   text-align: center;
   padding: 4rem 0;

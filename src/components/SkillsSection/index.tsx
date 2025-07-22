@@ -1,6 +1,12 @@
-import { FaCss3Alt, FaHtml5, FaReact, FaVideo } from "react-icons/fa";
+import { FaCss3Alt, FaGithub, FaHtml5, FaReact, FaVideo } from "react-icons/fa";
 import * as Element from "./styles";
-import { SiAdobeaftereffects, SiCanva, SiJavascript } from "react-icons/si";
+import {
+  SiAdobeaftereffects,
+  SiCanva,
+  SiJavascript,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import { SkillCard } from "../SkillCard";
 
@@ -17,6 +23,16 @@ export function SkillsSection() {
       description: "Domínio da base da web e lógica de programação.",
     },
     {
+      icon: <SiTypescript />,
+      title: "TypeScript",
+      description: "Segurança e tipagem estática para escalabilidade no React.",
+    },
+    {
+      icon: <SiTailwindcss />,
+      title: "Tailwind CSS",
+      description: "Estilização rápida e utilitária para interfaces modernas.",
+    },
+    {
       icon: <FaHtml5 />,
       title: "HTML5",
       description: "Marcação semântica e acessível para a web.",
@@ -25,6 +41,11 @@ export function SkillsSection() {
       icon: <FaCss3Alt />,
       title: "CSS3",
       description: "Estilização responsiva com Flexbox e Grid.",
+    },
+    {
+      icon: <FaGithub />,
+      title: "GitHub",
+      description: "Versionamento e colaboração com repositórios git.",
     },
     {
       icon: <SiCanva />,
@@ -45,14 +66,14 @@ export function SkillsSection() {
 
   return (
     <Element.Container>
-      <motion.h2
+      <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        💡 Habilidades
-      </motion.h2>
+        Habilidades
+      </motion.h3>
 
       <Element.Grid>
         {skills.map((skill, index) => (

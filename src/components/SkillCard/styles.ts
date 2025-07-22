@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  background-color: ${({ theme }) => theme.backgroundButton};
+  background-color: ${({ theme }) =>
+    theme.tittle === "light" ? "C0C4CE" : theme.backgroundButton};
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   box-shadow: 0 8px 20px ${({ theme }) => theme.shadowColor};
@@ -14,12 +15,12 @@ export const Card = styled.div`
 
   h3 {
     margin-top: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
 
   p {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     opacity: 0.9;
     text-indent: 1.5rem;
   }

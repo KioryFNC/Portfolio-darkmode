@@ -3,17 +3,10 @@ import * as Element from "./styles";
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard.tsx";
 import { ContactCard } from "../../components/ContactCard/index.tsx";
+import { SkillsSection } from "../../components/SkillsSection";
 
 import Myself from "../../assets/Myself.jpg";
 import Code from "../../assets/Code.png";
-
-import React from "../../assets/skills/React.svg";
-import typescript from "../../assets/skills/typescript.svg";
-import javaScript from "../../assets/skills/JavaScript.svg";
-import Github from "../../assets/skills/GitHub.svg";
-import HTML from "../../assets/skills/HTML.svg";
-import CSS from "../../assets/skills/CSS.svg";
-import tailwind from "../../assets/skills/tailwind.svg";
 
 import CoffeeDelivery from "../../assets/Projects/CoffeeDelivery.png";
 import GTA from "../../assets/Projects/GTA.png";
@@ -70,27 +63,7 @@ export function Home() {
             {t.aboutText.split("\n\n").map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
-            <Element.Skills>
-              {[
-                { img: React, name: "React" },
-                { img: typescript, name: "Typescript" },
-                { img: javaScript, name: "JavaScript" },
-                { img: Github, name: "Github" },
-                { img: HTML, name: "HTML" },
-                { img: CSS, name: "CSS" },
-                { img: tailwind, name: "Tailwind" },
-              ].map((skill, index) => (
-                <motion.span
-                  key={skill.name}
-                  initial={{ opacity: 0, x: 40, scale: 0.8 }}
-                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.3 }}
-                  viewport={{ once: true }}
-                >
-                  <img src={skill.img} /> {skill.name}
-                </motion.span>
-              ))}
-            </Element.Skills>
+            <SkillsSection />
           </Element.About>
         </motion.div>
       </Element.ContentHeader>
