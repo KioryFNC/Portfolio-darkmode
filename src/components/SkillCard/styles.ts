@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  background-color: ${({ theme }) =>
-    theme.tittle === "light" ? "C0C4CE" : theme.backgroundButton};
+  background-color: ${({ theme }) => theme.background};
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   box-shadow: 0 8px 20px ${({ theme }) => theme.shadowColor};
@@ -11,7 +10,7 @@ export const Card = styled.div`
   align-items: center;
   text-align: center;
   color: ${({ theme }) => theme.textColor};
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease;
 
   h3 {
     margin-top: 1rem;

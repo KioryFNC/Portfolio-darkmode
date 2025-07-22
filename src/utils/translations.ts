@@ -20,6 +20,18 @@ export const translations = {
       Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolvedor e contribuir positivamente para projetos inovadores.`,
 
     skills: "Habilidades",
+    descriptionSkill: {
+      React: "Biblioteca moderna para interfaces com foco em componentes.",
+      JavaScript: "Domínio da base da web e lógica de programação.",
+      TypeScript: "Segurança e tipagem estática para escalabilidade no React.",
+      Tailwind: "Estilização rápida e utilitária para interfaces modernas.",
+      HTML5: "Marcação semântica e acessível para a web.",
+      CSS3: "Estilização responsiva com Flexbox e Grid.",
+      GitHub: "Versionamento e colaboração com repositórios git.",
+      Canva: "Designs rápidos para redes sociais e apresentações.",
+      CapCut: "Edição de vídeos verticais com foco em conteúdo viral.",
+      AfterEffects: "Efeitos visuais, intros e animações profissionais.",
+    },
     myWork: "Meu trabalho",
     featuredProjects: "Veja os projetos em destaque",
 
@@ -71,6 +83,18 @@ I’m a dedicated professional with experience in inventory management, online s
 Always seeking new challenges, I’m committed to growing as a developer and contributing positively to innovative projects.`,
 
     skills: "Skills",
+    descriptionSkill: {
+      React: "Modern library for interfaces with a focus on components.",
+      JavaScript: "astery of web basics and programming logic.",
+      TypeScript: "Security and static typing for scalability in React.",
+      Tailwind: "Fast and utilitarian styling for modern interfaces.",
+      HTML5: "Semantic and accessible markup for the web. ",
+      CSS3: "Responsive styling with Flexbox and Grid.",
+      GitHub: "Versioning and collaboration with git repositories.",
+      Canva: "Quick designs for social networks and presentations.",
+      CapCut: "Vertical video editing with a focus on viral content.",
+      AfterEffects: "Professional visual effects, intros and animations.",
+    },
     myWork: "My work",
     featuredProjects: "See highlighted projects",
 

@@ -9,58 +9,63 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { SkillCard } from "../SkillCard";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../utils/translations";
 
 export function SkillsSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const skills = [
     {
       icon: <FaReact />,
       title: "React",
-      description: "Biblioteca moderna para interfaces com foco em componentes",
+      description: t.descriptionSkill.React,
     },
     {
       icon: <SiJavascript />,
       title: "JavaScript",
-      description: "Domínio da base da web e lógica de programação.",
+      description: t.descriptionSkill.JavaScript,
     },
     {
       icon: <SiTypescript />,
       title: "TypeScript",
-      description: "Segurança e tipagem estática para escalabilidade no React.",
+      description: t.descriptionSkill.TypeScript,
     },
     {
       icon: <SiTailwindcss />,
-      title: "Tailwind CSS",
-      description: "Estilização rápida e utilitária para interfaces modernas.",
+      title: "Tailwind",
+      description: t.descriptionSkill.Tailwind,
     },
     {
       icon: <FaHtml5 />,
       title: "HTML5",
-      description: "Marcação semântica e acessível para a web.",
+      description: t.descriptionSkill.HTML5,
     },
     {
       icon: <FaCss3Alt />,
       title: "CSS3",
-      description: "Estilização responsiva com Flexbox e Grid.",
+      description: t.descriptionSkill.CSS3,
     },
     {
       icon: <FaGithub />,
       title: "GitHub",
-      description: "Versionamento e colaboração com repositórios git.",
+      description: t.descriptionSkill.GitHub,
     },
     {
       icon: <SiCanva />,
       title: "Canva",
-      description: "Designs rápidos para redes sociais e apresentações.",
+      description: t.descriptionSkill.Canva,
     },
     {
       icon: <FaVideo />,
-      title: "CapCut Pro",
-      description: "Edição de vídeos verticais com foco em conteúdo viral.",
+      title: "CapCut",
+      description: t.descriptionSkill.CapCut,
     },
     {
       icon: <SiAdobeaftereffects />,
       title: "After Effects",
-      description: "Efeitos visuais, intros e animações profissionais.",
+      description: t.descriptionSkill.AfterEffects,
     },
   ];
 
@@ -72,7 +77,7 @@ export function SkillsSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Habilidades
+        {t.skills}
       </motion.h3>
 
       <Element.Grid>
