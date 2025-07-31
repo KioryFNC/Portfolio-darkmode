@@ -19,6 +19,7 @@ export const translations = {
 
       Sempre em busca de novos desafios, estou comprometido em evoluir como desenvolvedor e contribuir positivamente para projetos inovadores.`,
 
+    CV: "Baixar Currículo",
     skills: "Habilidades",
     descriptionSkill: {
       React: "Biblioteca moderna para interfaces com foco em componentes.",
@@ -81,6 +82,7 @@ I also have knowledge of Git/GitHub for version control and project collaboratio
 I’m a dedicated professional with experience in inventory management, online sales, and administrative support. I have skills in organization, effective communication, and teamwork, always aiming to improve processes and optimize results.
 
 Always seeking new challenges, I’m committed to growing as a developer and contributing positively to innovative projects.`,
+    CV: "Download CV",
 
     skills: "Skills",
     descriptionSkill: {

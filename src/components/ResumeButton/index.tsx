@@ -1,6 +1,8 @@
 import { DownloadSimple } from "phosphor-react";
 import * as Element from "./styles";
 import { useTheme } from "styled-components";
+import { translations } from "../../utils/translations";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 interface ResumeDownloadCardProps {
   fileUrl: string;
@@ -9,9 +11,12 @@ interface ResumeDownloadCardProps {
 
 export function ResumeDownloadCard({
   fileUrl,
-  label = "Baixar Curriculo",
+  label,
 }: ResumeDownloadCardProps) {
+  const { language } = useLanguage();
+  const t = translations[language];
   const theme = useTheme();
+
   return (
     <Element.Card
       as="a"
@@ -22,7 +27,7 @@ export function ResumeDownloadCard({
     >
       <div>
         <DownloadSimple size={28} color={theme["textColor"]} />
-        <p>{label}</p>
+        <p>{label ?? t.CV}</p>
       </div>
     </Element.Card>
   );
