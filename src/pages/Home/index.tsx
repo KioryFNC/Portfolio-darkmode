@@ -23,6 +23,7 @@ import { motion } from "framer-motion";
 
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
+import { ResumeDownloadCard } from "../../components/ResumeButton/index.tsx";
 
 export function Home() {
   const { language } = useLanguage();
@@ -63,6 +64,7 @@ export function Home() {
             {t.aboutText.split("\n\n").map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
+            <ResumeDownloadCard fileUrl="/Curriculo.pdf" />
             <SkillsSection />
           </Element.About>
         </motion.div>
