@@ -24,10 +24,76 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
 import { ResumeDownloadCard } from "../../components/ResumeButton/index.tsx";
+import { useState } from "react";
 
 export function Home() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const [category, setCategory] = useState<"sites" | "videos">("sites");
+
+  const siteProjects = [
+    {
+      image: CoffeeDelivery,
+      title: "CoffeeDelivery",
+      description: t.projects.coffee,
+      siteLink: "https://coffee-delivery-nu-liard.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/coffeeDelivery",
+    },
+    {
+      image: ToDo,
+      title: "ToDo-List",
+      description: t.projects.todo,
+      siteLink: "https://todo-list-lilac-phi.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/todoList",
+    },
+    {
+      image: Patins,
+      title: "Patins",
+      description: t.projects.patins,
+      siteLink: "https://pizza-shop-5o8w.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/patins-animation",
+    },
+    {
+      image: Timer,
+      title: "Timer",
+      description: t.projects.timer,
+      siteLink: "https://timer-ig-three.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/IgniteTimer",
+    },
+    {
+      image: GTA,
+      title: "GTA FiveM",
+      description: t.projects.gta,
+      siteLink: "https://five-m-six.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/stydyingFiveM",
+    },
+    {
+      image: Drift,
+      title: "Drift",
+      description: t.projects.drift,
+      siteLink: "https://drift-mu.vercel.app/",
+      codeLink: "https://github.com/KioryFNC/Drift",
+    },
+  ];
+
+  const videoProjects = [
+    {
+      title: "Edição 1",
+      description: "edit 1",
+      videoLink: "https://www.youtube.com/shorts/5hzS-dJHpbs",
+    },
+    {
+      title: "Edição 2",
+      description: "edit 2",
+      videoLink: "https://www.youtube.com/shorts/rgnJ_mJwKm8",
+    },
+    {
+      title: "Edição 3",
+      description: "edit 3",
+      videoLink: "https://www.youtube.com/shorts/oLvo4AiUtxM",
+    },
+  ];
 
   return (
     <Element.Root>
@@ -79,52 +145,45 @@ export function Home() {
           <div>
             <h3>{t.myWork}</h3>
             <h4>{t.featuredProjects}</h4>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "1rem",
+                justifyContent: "center",
+                marginBottom: "2rem",
+              }}
+            >
+              <button
+                onClick={() => setCategory("sites")}
+                style={{
+                  padding: "0.6rem 1.2rem",
+                  borderRadius: "6px",
+                  background: category === "sites" ? "#6366f1" : "#444",
+                  color: "white",
+                  border: "none",
+                  cursor: "pointer",
+                }}
+              >
+                Sites
+              </button>
+              <button
+                onClick={() => setCategory("videos")}
+                style={{
+                  padding: "0.6rem 1.2rem",
+                  borderRadius: "6px",
+                  background: category === "videos" ? "#6366f1" : "#444",
+                  color: "white",
+                  border: "none",
+                  cursor: "pointer",
+                }}
+              >
+                Edições de Vídeo
+              </button>
+            </div>
           </div>
           <Element.Project>
-            {[
-              {
-                image: CoffeeDelivery,
-                title: "CoffeeDelivery",
-                description: t.projects.coffee,
-                siteLink: "https://coffee-delivery-nu-liard.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/coffeeDelivery",
-              },
-              {
-                image: ToDo,
-                title: "ToDo-List",
-                description: t.projects.todo,
-                siteLink: "https://todo-list-lilac-phi.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/todoList",
-              },
-              {
-                image: Patins,
-                title: "Patins",
-                description: t.projects.patins,
-                siteLink: "https://pizza-shop-5o8w.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/patins-animation",
-              },
-              {
-                image: Timer,
-                title: "Timer",
-                description: t.projects.timer,
-                siteLink: "https://timer-ig-three.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/IgniteTimer",
-              },
-              {
-                image: GTA,
-                title: "GTA FiveM",
-                description: t.projects.gta,
-                siteLink: "https://five-m-six.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/stydyingFiveM",
-              },
-              {
-                image: Drift,
-                title: "Drift",
-                description: t.projects.drift,
-                siteLink: "https://drift-mu.vercel.app/",
-                codeLink: "https://github.com/KioryFNC/Drift",
-              },
-            ].map((project, index) => (
+            {[].map((project, index) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}
