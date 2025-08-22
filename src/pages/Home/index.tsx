@@ -183,17 +183,44 @@ export function Home() {
             </div>
           </div>
           <Element.Project>
-            {[].map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <ProjectCard {...project} />
-              </motion.div>
-            ))}
+            {category === "sites" &&
+              siteProjects.map((project, index) => (
+                <motion.div
+                  key={project.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <ProjectCard {...project} />
+                </motion.div>
+              ))}
+            {category === "videos" &&
+              videoProjects.map((video, index) => (
+                <motion.div
+                  key={video.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  style={{
+                    border: "1px solid #555",
+                    borderRadius: "8px",
+                    padding: "1rem",
+                  }}
+                >
+                  <h3>{video.title}</h3>
+                  <p>{video.description}</p>
+                  <a
+                    href={video.videoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#6366f1", fontWeight: "bold" }}
+                  >
+                    Ver no Youtube
+                  </a>
+                </motion.div>
+              ))}
           </Element.Project>
         </Element.MyProjects>
       </motion.div>
