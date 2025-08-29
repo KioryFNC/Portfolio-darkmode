@@ -6,7 +6,7 @@ export const translations = {
       contact: "Contato",
     },
     hello: "Olá Mundo! Meu nome é",
-    role: "Desenvolvedor Front end",
+    role: "Desenvolvedor Front-end e Editor de Vídeo",
     description:
       "Apaixonado por Front end e estudando cada dia mais, dedicado a criar aplicativos e site que sejam responsiveis, elegantes e fáceis de usar.",
 
@@ -70,7 +70,7 @@ export const translations = {
       contact: "Contact",
     },
     hello: "Hello World! My name is",
-    role: "Front-end Developer",
+    role: "Front-end Developer and Video Editor",
     description:
       "Passionate about Front-End and constantly learning, I’m dedicated to building responsive, elegant, and easy-to-use applications and websites.",
 
