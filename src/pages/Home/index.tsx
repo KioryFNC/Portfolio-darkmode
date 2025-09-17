@@ -2,6 +2,7 @@ import * as Element from "./styles";
 
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard.tsx";
+import { VideoCard } from "../../components/VideoCard";
 import { ContactCard } from "../../components/ContactCard/index.tsx";
 import { SkillsSection } from "../../components/SkillsSection";
 
@@ -14,6 +15,12 @@ import Drift from "../../assets/Projects/drift.png";
 import Timer from "../../assets/Projects/Timer.png";
 import ToDo from "../../assets/Projects/ToDo.png";
 import Patins from "../../assets/Projects/patins.png";
+import TropadeElite from "../../assets/Thumbnail/Tropa de Elite.jpg";
+import Reacher from "../../assets/Thumbnail/Reacher.jpg";
+import Sparta from "../../assets/Thumbnail/300.jpg";
+import Spiderman from "../../assets/Thumbnail/spiderman.jpg";
+import PrisonBreak from "../../assets/Thumbnail/PrisonBreak.jpg";
+import StrangerThings from "../../assets/Thumbnail/Stranger Things.jpg";
 
 import LinkedinLogo from "../../assets/Contact/LinkedinLogo.png";
 import GithubLogo from "../../assets/Contact/GithubLogo.png";
@@ -79,19 +86,40 @@ export function Home() {
 
   const videoProjects = [
     {
-      title: "Edição 1",
-      description: "edit 1",
-      videoLink: "https://www.youtube.com/shorts/5hzS-dJHpbs",
+      image: TropadeElite,
+      title: "Tropa de Elite",
+      description: "Capitão Nascimento",
+      videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
     },
     {
-      title: "Edição 2",
-      description: "edit 2",
-      videoLink: "https://www.youtube.com/shorts/rgnJ_mJwKm8",
+      image: Reacher,
+      title: "Reacher",
+      description: "Reacher",
+      videoLink: "https://youtube.com/shorts/wL_yWgKDJdY",
     },
     {
-      title: "Edição 3",
-      description: "edit 3",
+      image: Sparta,
+      title: "300",
+      description: "300 de Esparta",
+      videoLink: "https://youtube.com/shorts/tVQJHtLpmsQ",
+    },
+    {
+      image: Spiderman,
+      title: "Homem Aranha",
+      description: "Andrew Garfield",
       videoLink: "https://www.youtube.com/shorts/oLvo4AiUtxM",
+    },
+    {
+      image: PrisonBreak,
+      title: "Prison Break",
+      description: "michael scofield",
+      videoLink: "https://youtube.com/shorts/Ea8bMHTUt08",
+    },
+    {
+      image: StrangerThings,
+      title: "Stranger Things",
+      description: "Billy Hargrove",
+      videoLink: "https://youtube.com/shorts/5hzS-dJHpbs",
     },
   ];
 
@@ -203,22 +231,8 @@ export function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  style={{
-                    border: "1px solid #555",
-                    borderRadius: "8px",
-                    padding: "1rem",
-                  }}
                 >
-                  <h3>{video.title}</h3>
-                  <p>{video.description}</p>
-                  <a
-                    href={video.videoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#6366f1", fontWeight: "bold" }}
-                  >
-                    Ver no Youtube
-                  </a>
+                  <VideoCard {...video} />
                 </motion.div>
               ))}
           </Element.Project>
