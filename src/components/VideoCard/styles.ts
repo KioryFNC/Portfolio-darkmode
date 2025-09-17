@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Card = styled.div`
   width: 100%;
   height: 100%;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +21,8 @@ export const Card = styled.div`
   }
 
   img {
-    width: 28rem;
+    width: 22rem;
+    max-width: 32rem;
     border-radius: 8px;
   }
 
