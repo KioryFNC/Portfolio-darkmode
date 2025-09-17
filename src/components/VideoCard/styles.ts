@@ -44,7 +44,7 @@ export const Card = styled.div`
     a {
       background: ${(props) => props.theme.scrollbarTrack};
       color: ${(props) => props.theme.textColor};
-      padding: 0.6rem 1.2rem;
+      padding: 0.8rem 2rem;
       font-size: var(--fs-base);
       border-radius: 6px;
       text-decoration: none;

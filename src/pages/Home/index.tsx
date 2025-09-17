@@ -107,7 +107,7 @@ export function Home() {
       image: Spiderman,
       title: "Homem Aranha",
       description: "Andrew Garfield",
-      videoLink: "https://www.youtube.com/shorts/oLvo4AiUtxM",
+      videoLink: "https://youtube.com/shorts/8ehMHe2kVVI",
     },
     {
       image: PrisonBreak,
@@ -193,7 +193,7 @@ export function Home() {
                   cursor: "pointer",
                 }}
               >
-                Sites
+                {t.websites}
               </button>
               <button
                 onClick={() => setCategory("videos")}
@@ -206,7 +206,7 @@ export function Home() {
                   cursor: "pointer",
                 }}
               >
-                Edições de Vídeo
+                {t.video}
               </button>
             </div>
           </div>

@@ -1,6 +1,4 @@
 import * as Element from "./styles";
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../utils/translations";
 
 interface VideoCardProps {
   image: string;
@@ -15,9 +13,6 @@ export function VideoCard({
   description,
   videoLink,
 }: VideoCardProps) {
-  const { language } = useLanguage();
-  const t = translations[language];
-
   return (
     <Element.Card>
       <img src={image} alt={title} />
@@ -25,7 +20,7 @@ export function VideoCard({
       <p>{description}</p>
       <div className="buttons">
         <a href={videoLink} target="_blank" rel="noopener noreferrer">
-          {t.projectCard.site || "Assistir"}
+          Link Vídeo
         </a>
       </div>
     </Element.Card>

@@ -35,6 +35,8 @@ export const translations = {
     },
     myWork: "Meu trabalho",
     featuredProjects: "Veja os projetos em destaque",
+    websites: "Sites",
+    video: "Edições de Vídeo",
 
     contact: "Contato",
     workTogether: "Vamos trabalhar juntos?",
@@ -99,6 +101,8 @@ Always seeking new challenges, I’m committed to growing as a developer and con
     },
     myWork: "My work",
     featuredProjects: "See highlighted projects",
+    websites: "Websites",
+    video: "Video Edits",
 
     contact: "Contact",
     workTogether: "Shall we work together?",
