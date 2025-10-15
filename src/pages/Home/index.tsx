@@ -20,7 +20,7 @@ import Reacher from "../../assets/Thumbnail/Reacher.jpg";
 import Sparta from "../../assets/Thumbnail/300.jpg";
 import Spiderman from "../../assets/Thumbnail/spiderman.jpg";
 import PrisonBreak from "../../assets/Thumbnail/PrisonBreak.jpg";
-import StrangerThings from "../../assets/Thumbnail/Stranger Things.jpg";
+import Dino from "../../assets/Thumbnail/dino.png";
 
 import LinkedinLogo from "../../assets/Contact/LinkedinLogo.png";
 import GithubLogo from "../../assets/Contact/GithubLogo.png";
@@ -92,6 +92,13 @@ export function Home() {
       videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
     },
     {
+      image: Dino,
+      title: "Ramon Dino",
+      description: "Ramon Dino Campeão Mr. Olympia",
+      videoLink:
+        "https://www.tiktok.com/@moviescutdy/video/7560213423884078347",
+    },
+    {
       image: Reacher,
       title: "Reacher",
       description: "Reacher",
@@ -114,12 +121,6 @@ export function Home() {
       title: "Prison Break",
       description: "michael scofield",
       videoLink: "https://youtube.com/shorts/Ea8bMHTUt08",
-    },
-    {
-      image: StrangerThings,
-      title: "Stranger Things",
-      description: "Billy Hargrove",
-      videoLink: "https://youtube.com/shorts/5hzS-dJHpbs",
     },
   ];
 
