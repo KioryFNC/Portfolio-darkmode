@@ -17,10 +17,10 @@ import ToDo from "../../assets/Projects/ToDo.png";
 import Patins from "../../assets/Projects/patins.png";
 import TropadeElite from "../../assets/Thumbnail/Tropa de Elite.jpg";
 import Reacher from "../../assets/Thumbnail/Reacher.jpg";
-import Sparta from "../../assets/Thumbnail/300.jpg";
-import Spiderman from "../../assets/Thumbnail/spiderman.jpg";
-import PrisonBreak from "../../assets/Thumbnail/PrisonBreak.jpg";
 import Dino from "../../assets/Thumbnail/dino.png";
+import Lula from "../../assets/Thumbnail/lula.png";
+import Rocha from "../../assets/Thumbnail/rocha.png";
+import Wagner from "../../assets/Thumbnail/wagner.png";
 
 import LinkedinLogo from "../../assets/Contact/LinkedinLogo.png";
 import GithubLogo from "../../assets/Contact/GithubLogo.png";
@@ -86,41 +86,44 @@ export function Home() {
 
   const videoProjects = [
     {
-      image: TropadeElite,
+      image: Lula,
       title: "Tropa de Elite",
-      description: "Capitão Nascimento",
-      videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
+      description: "+ 1.700.000 views",
+      videoLink:
+        "https://www.tiktok.com/@moviescutdy/video/7567107218558995719",
     },
     {
       image: Dino,
       title: "Ramon Dino",
-      description: "Ramon Dino Campeão Mr. Olympia",
+      description: "+ 200.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7560213423884078347",
     },
     {
+      image: Rocha,
+      title: "Tropa de Elite",
+      description: "+ 1.200.000 views",
+      videoLink:
+        "https://www.tiktok.com/@moviescutdy/video/7563403909180460299",
+    },
+    {
+      image: Wagner,
+      title: "Tropa de Elite",
+      description: "+ 700.000 views",
+      videoLink:
+        "https://www.tiktok.com/@moviescutdy/video/7564140354748845324",
+    },
+    {
+      image: TropadeElite,
+      title: "Tropa de Elite",
+      description: "+ 200.000 views",
+      videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
+    },
+    {
       image: Reacher,
       title: "Reacher",
-      description: "Reacher",
+      description: "+ 2.000 views",
       videoLink: "https://youtube.com/shorts/wL_yWgKDJdY",
-    },
-    {
-      image: Sparta,
-      title: "300",
-      description: "300 de Esparta",
-      videoLink: "https://youtube.com/shorts/tVQJHtLpmsQ",
-    },
-    {
-      image: Spiderman,
-      title: "Homem Aranha",
-      description: "Andrew Garfield",
-      videoLink: "https://youtube.com/shorts/8ehMHe2kVVI",
-    },
-    {
-      image: PrisonBreak,
-      title: "Prison Break",
-      description: "michael scofield",
-      videoLink: "https://youtube.com/shorts/Ea8bMHTUt08",
     },
   ];
 
