@@ -88,7 +88,7 @@ export function Home() {
     {
       image: Lula,
       title: "Tropa de Elite",
-      description: "+ 1.700.000 views",
+      description: "+ 1.800.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7567107218558995719",
     },
@@ -102,21 +102,21 @@ export function Home() {
     {
       image: Rocha,
       title: "Tropa de Elite",
-      description: "+ 1.200.000 views",
+      description: "+ 1.900.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7563403909180460299",
     },
     {
       image: Wagner,
       title: "Tropa de Elite",
-      description: "+ 700.000 views",
+      description: "+ 1.000.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7564140354748845324",
     },
     {
       image: TropadeElite,
       title: "Tropa de Elite",
-      description: "+ 200.000 views",
+      description: "+ 300.000 views",
       videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
     },
     {
