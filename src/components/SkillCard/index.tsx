@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import * as Element from "./styles";
 import { motion } from "framer-motion";
+import { useSound } from "../../hooks/useSound";
 
 interface SkillCardProps {
   icon: ReactNode;
@@ -9,12 +10,15 @@ interface SkillCardProps {
 }
 
 export function SkillCard({ icon, title, description }: SkillCardProps) {
+  const { playHover } = useSound();
+
   return (
     <Element.Card
       as={motion.div}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 300 }}
+      onMouseEnter={playHover}
     >
       <Element.Icon>{icon}</Element.Icon>
       <h3>{title}</h3>

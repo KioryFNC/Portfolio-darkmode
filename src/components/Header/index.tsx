@@ -7,12 +7,10 @@ import { LanguageButton } from "../LanguegeButton";
 import { useTheme } from "styled-components";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
-import hoverSoundFile from "../../assets/sounds/hover1.mp3";
-import clickSoundFile from "../../assets/sounds/click.mp3";
+import { useSound } from "../../hooks/useSound";
 
 export function Header() {
-  const hoverSound = new Audio(hoverSoundFile);
-  const clickSound = new Audio(clickSoundFile);
+  const { playHover, playClick } = useSound();
 
   const theme = useTheme();
 
@@ -39,25 +37,13 @@ export function Header() {
       <img src={theme.title === "light" ? LogoLight : Logo} />
       <div>
         <nav>
-          <a
-            href="#about"
-            onMouseEnter={() => hoverSound.play()}
-            onClick={() => clickSound.play()}
-          >
+          <a href="#about" onMouseEnter={playHover} onClick={playClick}>
             {t.menu.about}
           </a>
-          <a
-            href="#project"
-            onMouseEnter={() => hoverSound.play()}
-            onClick={() => clickSound.play()}
-          >
+          <a href="#project" onMouseEnter={playHover} onClick={playClick}>
             {t.menu.projects}
           </a>
-          <a
-            href="#contact"
-            onMouseEnter={() => hoverSound.play()}
-            onClick={() => clickSound.play()}
-          >
+          <a href="#contact" onMouseEnter={playHover} onClick={playClick}>
             {t.menu.contact}
           </a>
         </nav>

@@ -32,10 +32,13 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
 import { ResumeDownloadCard } from "../../components/ResumeButton/index.tsx";
 import { useState } from "react";
+import { useSound } from "../../hooks/useSound";
 
 export function Home() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const { playHover, playClick } = useSound();
 
   const [category, setCategory] = useState<"sites" | "videos">("sites");
 
@@ -188,11 +191,15 @@ export function Home() {
               }}
             >
               <button
-                onClick={() => setCategory("sites")}
+                onMouseEnter={playHover}
+                onClick={() => {
+                  playClick();
+                  setCategory("sites");
+                }}
                 style={{
                   padding: "0.6rem 1.2rem",
                   borderRadius: "6px",
-                  background: category === "sites" ? "#6366f1" : "#444",
+                  background: category === "sites" ? "#5d8682" : "#444",
                   color: "white",
                   border: "none",
                   cursor: "pointer",
@@ -201,11 +208,15 @@ export function Home() {
                 {t.websites}
               </button>
               <button
-                onClick={() => setCategory("videos")}
+                onMouseEnter={playHover}
+                onClick={() => {
+                  playClick();
+                  setCategory("videos");
+                }}
                 style={{
                   padding: "0.6rem 1.2rem",
                   borderRadius: "6px",
-                  background: category === "videos" ? "#6366f1" : "#444",
+                  background: category === "videos" ? "#5d8682" : "#444",
                   color: "white",
                   border: "none",
                   cursor: "pointer",
