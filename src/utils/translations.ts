@@ -6,9 +6,9 @@ export const translations = {
       contact: "Contato",
     },
     hello: "Olá Mundo! Meu nome é",
-    role: "Desenvolvedor Front-end e Editor de Vídeo",
+    role: "Editor de Vídeo e Desenvolvedor Front-end",
     description:
-      "Apaixonado por Front end e estudando cada dia mais, dedicado a criar aplicativos e site que sejam responsiveis, elegantes e fáceis de usar.",
+      "Editor de vídeo com foco total em conteúdo criativo e impactante. Minha base em desenvolvimento Front-end contribui para um olhar apurado em design, ritmo visual e experiência do usuário.",
 
     aboutTitle: "Sobre mim",
     aboutText: `Apaixonado por tecnologia e aprendizado contínuo, estou desenvolvendo minha carreira em Desenvolvimento Web Front-End, com foco em JavaScript, TypeScript e React. Tenho experiência com styled-components, Clean Code e Componentização, criando interfaces modernas, responsivas e eficientes.
@@ -76,9 +76,9 @@ export const translations = {
       contact: "Contact",
     },
     hello: "Hello World! My name is",
-    role: "Front-end Developer and Video Editor",
+    role: "Video Editor and Front-end Developer",
     description:
-      "Passionate about Front-End and constantly learning, I’m dedicated to building responsive, elegant, and easy-to-use applications and websites.",
+      "Video editor fully focused on creating creative and impactful content. My background in Front-end development contributes to a sharp eye for design, visual rhythm, and user experience.",
 
     aboutTitle: "About me",
     aboutText: `Passionate about technology and continuous learning, I’m building my career in Web Front-End Development, focusing on JavaScript, TypeScript, and React. I have experience with styled-components, Clean Code, and Componentization, creating modern, responsive, and efficient interfaces.
