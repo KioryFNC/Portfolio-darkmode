@@ -3,6 +3,7 @@ import * as Element from "./styles";
 import {
   SiAdobeaftereffects,
   SiCanva,
+  SiElevenlabs,
   SiJavascript,
   SiTailwindcss,
   SiTypescript,
@@ -11,12 +12,38 @@ import { motion } from "framer-motion";
 import { SkillCard } from "../SkillCard";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../utils/translations";
+import { GiTopaz } from "react-icons/gi";
 
 export function SkillsSection() {
   const { language } = useLanguage();
   const t = translations[language];
 
   const skills = [
+    {
+      icon: <SiAdobeaftereffects />,
+      title: "After Effects",
+      description: t.descriptionSkill.AfterEffects,
+    },
+    {
+      icon: <SiCanva />,
+      title: "Canva",
+      description: t.descriptionSkill.Canva,
+    },
+    {
+      icon: <FaVideo />,
+      title: "CapCut",
+      description: t.descriptionSkill.CapCut,
+    },
+    {
+      icon: <GiTopaz />,
+      title: "Topaz",
+      description: t.descriptionSkill.Topaz,
+    },
+    {
+      icon: <SiElevenlabs />,
+      title: "Elevenlabs",
+      description: t.descriptionSkill.ElevenLabs,
+    },
     {
       icon: <FaReact />,
       title: "React",
@@ -51,21 +78,6 @@ export function SkillsSection() {
       icon: <FaGithub />,
       title: "GitHub",
       description: t.descriptionSkill.GitHub,
-    },
-    {
-      icon: <SiCanva />,
-      title: "Canva",
-      description: t.descriptionSkill.Canva,
-    },
-    {
-      icon: <FaVideo />,
-      title: "CapCut",
-      description: t.descriptionSkill.CapCut,
-    },
-    {
-      icon: <SiAdobeaftereffects />,
-      title: "After Effects",
-      description: t.descriptionSkill.AfterEffects,
     },
   ];
 

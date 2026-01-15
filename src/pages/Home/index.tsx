@@ -17,7 +17,7 @@ import ToDo from "../../assets/Projects/ToDo.png";
 import Patins from "../../assets/Projects/patins.png";
 import TropadeElite from "../../assets/Thumbnail/Tropa de Elite.jpg";
 import Reacher from "../../assets/Thumbnail/Reacher.jpg";
-import Dino from "../../assets/Thumbnail/dino.png";
+import Harry from "../../assets/Thumbnail/harry.png";
 import Lula from "../../assets/Thumbnail/lula.png";
 import Rocha from "../../assets/Thumbnail/rocha.png";
 import Wagner from "../../assets/Thumbnail/wagner.png";
@@ -93,31 +93,32 @@ export function Home() {
         "https://www.tiktok.com/@moviescutdy/video/7567107218558995719",
     },
     {
-      image: Dino,
-      title: "Ramon Dino",
-      description: "+ 200.000 views",
+      image: Harry,
+      title: "Harry Potter",
+      description: "+ 1.300.000 views",
       videoLink:
-        "https://www.tiktok.com/@moviescutdy/video/7560213423884078347",
+        "https://www.tiktok.com/@moviescutdy/video/7574814311143574795",
     },
     {
       image: Rocha,
       title: "Tropa de Elite",
-      description: "+ 1.900.000 views",
+      description: "+ 2.000.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7563403909180460299",
     },
     {
       image: Wagner,
       title: "Tropa de Elite",
-      description: "+ 1.000.000 views",
+      description: "+ 1.200.000 views",
       videoLink:
         "https://www.tiktok.com/@moviescutdy/video/7564140354748845324",
     },
     {
       image: TropadeElite,
       title: "Tropa de Elite",
-      description: "+ 300.000 views",
-      videoLink: "https://youtube.com/shorts/GvCoXhHfrNE",
+      description: "+ 700.000 views",
+      videoLink:
+        "https://www.tiktok.com/@moviescutdy/video/7590086602106490113",
     },
     {
       image: Reacher,
